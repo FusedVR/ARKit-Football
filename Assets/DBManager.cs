@@ -20,7 +20,7 @@ public class DBManager: MonoBehaviour {
 		if (Instance == null) Instance = this;
 
 		// Set this before calling into the realtime database.
-		FirebaseApp.DefaultInstance.SetEditorDatabaseUrl("https://arkittutorial.firebaseio.com/");
+		FirebaseApp.DefaultInstance.SetEditorDatabaseUrl("use_your_FirebaseDB_URL_here");
 
 		// Get the root reference location of the database, from which we will operate on the database.
 		db = FirebaseDatabase.DefaultInstance.GetReference("scores");
